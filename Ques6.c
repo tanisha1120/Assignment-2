@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int averageOfThree() {
+int main() {
     // 6. Write a program to calculate the average of three integers. Numbers are given by the user.
     // tanishaSingh
     int num1, num2, num3;
