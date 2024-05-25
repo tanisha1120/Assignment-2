@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int circumferenceOfCircle() {
+int main() {
     // 7. Write a program to calculate the circumference of a circle.
     // tanishaSingh
     float radius;
