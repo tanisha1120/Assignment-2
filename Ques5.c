@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
    char c;
    printf("Enter an alphabet: ");
    scanf(" %c", &c);
