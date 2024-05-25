@@ -1,23 +1,16 @@
 #include <stdio.h>
-#include <ctype.h>
 
-int main() {
-    // 5. Create a program that takes a single character as input and determines whether it is a vowel or a consonant.
-    // tanishaSingh
-    char ch;
-    printf("Enter a character: ");
-    scanf(" %c", &ch);
+int main(void) {
+   char c;
+   printf("Enter an alphabet: ");
+   scanf(" %c", &c);
 
-    if (isalpha(ch)) {
-        ch = tolower(ch);
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-            printf("%c is a vowel.\n", ch);
-        } else {
-            printf("%c is a consonant.\n", ch);
-        }
-    } else {
-        printf("Invalid input.\n");
-    }
+   if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+      c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+      printf("%c is a vowel.\n", c);
+   else if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+      printf("%c is a consonant.\n", c);
+   else
+      printf("Error! Non-alphabetic character.\n");
 
-    return 0;
 }
